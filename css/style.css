@@ -1,0 +1,193 @@
+
+body {
+    margin: 0;
+    font-family: Trebuchet MS, serif;
+    font-size: 20px;
+    color: gainsboro;
+}
+
+h1, h2{
+    margin: 0;
+    padding:15px 0;
+    text-align: center;
+    font-family: Trebuchet MS, serif;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+
+p{
+    text-align: center;
+    margin: 0;
+    padding-bottom: 15px;
+}
+
+.front-page{
+    background-image: url(../images/portada.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 720px;
+}
+
+.page{
+    background-color: black;
+    height: 720px;
+}
+
+/* header */
+.nav-bar {
+    background-color: rgb(18, 26, 43);
+    margin: 0px;
+    padding-right:30px;
+}
+
+.nav-bar ul {
+    display: flex;
+    margin: 0;
+    justify-content: right;
+    list-style: none;
+}
+
+
+.nav-bar a {
+    color: gainsboro;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+}
+
+
+/* listado tabla en index.html */
+
+.table-list-container {
+    height: auto;
+    margin: 0;
+    background-color: black;
+}
+
+.table-list {
+    width: 800px;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+.table-list tr {
+    border-bottom: 1px solid #444;
+}
+
+.table-list td {
+    padding: 12px;
+}
+
+.table-button {
+    background-color: transparent;
+    border: none;
+    padding: 6px 14px;
+    font-family: Trebuchet MS, serif;
+    font-size: 20px;
+    color: gainsboro;
+}
+
+
+
+/* formulario.html */
+
+.form {
+    margin:auto;
+    box-shadow: 0 0 20px 0px #0007;
+    width: 765px;
+    background-color: rgb(32, 62, 87);
+    border-radius: 25px;
+    padding: 35px;
+    margin: 10px auto;
+}
+
+.form-title{
+    text-align: center;
+    font-weight: bold;
+}
+
+.form-input {
+    margin-bottom: 10px;
+    padding: 6px 12px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 1px solid gainsboro;
+    border-radius: 3px;
+    font-size: 20px;
+    color: gainsboro;
+}
+
+.form textarea {
+    height: 100px;
+    resize: none;
+}
+
+#form-submit {
+    font-weight: bold;
+    font-size: medium;
+}
+
+.form select{
+    background-color: rgb(32, 62, 87);
+}
+
+
+/* listado_box.html */
+
+
+.album-box img {
+    width: 310px;
+    height: 310px;
+    align-self: center;
+    border-radius: 5px;
+}
+
+.album-box-container {
+    display: grid;
+    grid-template-columns: repeat(3, 320px);
+    grid-template-rows: repeat(3, 320px);
+    justify-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px auto;
+}
+
+.album-box{
+    justify-self: stretch;
+}
+
+/* album.html */
+
+
+
+.album-item {
+    display: flex;
+    margin:auto;
+    background-color: rgb(32, 62, 87);
+    padding: 35px;
+    margin: 10px auto;
+    width: 800px;
+}
+
+.album-pic-info {
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;   
+}
+
+.album-pic-info img {
+    width: 450px;
+    height: 450px;
+    border-radius: 5px;
+}
+
+.album-songs {
+    width: 70%;
+}
+
+.album-songs li{
+    margin-bottom: 15px;
+}
