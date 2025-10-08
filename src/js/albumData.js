@@ -12,22 +12,22 @@ const albumData = [
         [ "Hexagram", "Needles and Pins", "Minerva","Good Morning Beautiful", "Deathblow", "When Girls Telephone Boys", "Battle-Axe", "Lucky You", "Bloody Cape", "Anniversary of an Uninteresting Event", "Moana"]
     },
     { idx: 4, img: "../images/saturday-night-wrist.jpg", title: "Saturday Night Wrist", year: 2006, songs:
-        ["Hole in the Earth", {name: "Mein", note: "Serj Tankian de System of a Down hace coros en esta canción." }, 
-            "Cherry Waves", "Rapture", "Beware", "U,U,D,D,L,R,L,R,A,B,Select,Start", "Pink Cellphone", "Xerces", "Moose Wallow", "Mein", "Kimdracula", "Combat"]
+        [{name: "Hole in the Earth", note: "Chino explicó en una entrevista en Argentina 2007 que el nombre del album no tiene mas significado que 'la sensacion de dormirte borracho sobre tu propio brazo y despertarte sin poder moverlo'." }, "Rapture", "Beware", "Cherry Waves",{name: "Mein", note: "Serj Tankian de System of a Down hace coros en esta canción." },
+            { name: "U,U,D,D,L,R,L,R,A,B,Select,Start", note: "Konami Code. Desbloquea easter eggs en miles de videojuegos, como Silent Hill 3 y Dead by Daylight. "}, "Xerces", "Rats!Rats!Rats!", "Pink Cellphone","Combat","Kimdracula", "Riviere", "Drive"]
      },
     { idx:5, img: "../images/diamond-eyes.jpg", title: "Diamond Eyes", year: 2010, songs: 
-        [ "Diamond Eyes", "Royal", "CMND/CTRL", "You've Seen the Butcher", "Rocket Skates", "Sextape", "Beauty School", "Prince", "Risk", "976-EVIL", "This Place Is Death"]
+        [ "Diamond Eyes", "Royal", "CMND/CTRL", "You've Seen the Butcher", "Beauty School",  "Prince", "Rocket Skates", "Sextape", "Risk", "976-EVIL", "This Place Is Death"]
      },
     { idx:6, img: "../images/koi-no-yokan.jpg", title: "Koi No Yokan", year: 2012, songs:
-        [ "Swerve City", "Romantic Dreams", "Leathers", "Poltergeist", "Entombed", "Gauze", "Rosemary", "Tempest", "Goon Squad", "Graphic Nature", "What Happened to You?", "Placentra"]    
+        [ "Swerve City", "Romantic Dreams", "Leathers", "Poltergeist", "Entombed", "Graphic Nature", "Tempest", "Gauze", "Rosemary", "Goon Squad", "What Happened to You?"]    
      },
     { idx:7, img: "../images/gore.jpg", title: "Gore", year: 2016, songs: 
-        [ "Prayers / Triangles", "Doomed User", "Hearts / Wires", "Geometric Headdress", "Radiant City", "Acid Hologram", "Phantom Bride", "Rubicon", "Swerve City (Koi No Yokan Version)", "Happens All the Time", "Gore"]
+        [ "Prayers / Triangles", "Acid Hologram", "Doomed User","Geometric Headdress", "Hearts / Wires", "Pittura Infamante", "Xenon", "(L)MIRL", "Gore", "Phantom Bride", "Rubicon"]
      },
     { idx:8, img: "../images/ohms.jpg", title: "Ohms", year: 2020, songs: 
-        [ "Ohms", "Genesis", "Ceremony", "Urantia", "Pompeji", "The Spell of Mathematics", "Headless", "This Link Is Dead", "Radiant City (Koi No Yokan Version)", "Error", "The Past"]
+        ["Genesis", "Ceremony", "Urantia", "Error", "The Spell of Mathematics", "Pompeji", "This Link Is Dead", "Radiant City", "Headless","Ohms"]
      },
-    { idx:9, img: "../images/private-music.jpg", title: "Private music", year: 2025, songs:
-        [ "Eclipse", "Nebula", "Stellar Drift", "Quantum Leap", "Celestial Dance", "Lunar Waves", "Solar Flare", "Galactic Voyage", "Cosmic Whisper", "Astral Plane"]
+    { idx:9, img: "../images/private-music.jpg", title: "private music", year: 2025, songs:
+        [ "my mind is a mountain", "locked club", "ecdysis", "infinite source", "souvenir", "cXz", "i think about you all the time", "milk of the madonna", "cut hands", "~metal dream", "departing the body" ]
      }
 ];

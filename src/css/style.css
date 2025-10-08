@@ -97,7 +97,6 @@ p{
 .nav-bar a:hover {
     color: white;
     cursor: pointer;
-    font-weight: bold;
 }
 
 
@@ -209,6 +208,8 @@ p{
 .form-title{
     text-align: center;
     font-weight: bold;
+    padding: 0;
+    margin: 0;
 }
 
 .form-input {
@@ -237,6 +238,16 @@ p{
     background-color: rgb(32, 62, 87);
 }
 
+@media (max-width: 1000px) {
+    
+    .form {
+        width: 70%;
+    }
+    .form-input, .form p {
+        font-size: 16px;
+    }
+}
+
 @media (max-width: 800px) {
     .form {
         width:85%;
@@ -252,6 +263,14 @@ p{
     }
 }
 
+@media (max-width: 500px) {
+    .form {
+        width: 95%;
+        padding: 20px;
+        top: 50%;
+
+    }
+}
 
 /* listado_box.html */
 
@@ -368,9 +387,9 @@ p{
     background: rgb(18, 26, 43);
     color: gainsboro;
     padding: 22px;
-    font-size: 20px;
+    font-size: 17px;
     width: 450px;
-    height: 450px;
+    height: auto;
     box-sizing: border-box;
 }
 
@@ -421,6 +440,13 @@ li:hover {
     .album-songs li:active .song-info {
         display: block;
     }
+
+    .song-info {
+        position: absolute;
+        left: 6%;
+        top: -400%;
+        width: 500px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -450,13 +476,13 @@ li:hover {
     }
 
     .song-info {
-        position: relative;
+        position: absolute;
         left: 0%;
-        top: 110%;
-        width: 300px;
-        height: 300px;
+        top: -400%;
+        width: 320px;
+        height: auto;
         font-size: 16px;
-        padding: 10px;
+        padding: 10px
     }
 
     .album-songs li:active .song-info {
