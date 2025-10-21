@@ -272,6 +272,17 @@ p{
     }
 }
 
+.ss-main {
+  background-color: rgb(32, 62, 87); 
+}
+
+.ss-content {
+  background-color: rgb(32, 62, 87);
+}
+
+
+
+
 /* listado_box.html */
 
 .album-box-container {

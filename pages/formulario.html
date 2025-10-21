@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Contacto</title> <!-- comprar.html -->
+    <link href="https://cdn.jsdelivr.net/npm/slim-select@2.6.0/dist/slimselect.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/slim-select@2.6.0/dist/slimselect.min.js"></script>
 </head>
 <body>
     
@@ -28,7 +30,7 @@
         <input class="form-input" type="text" name="address" placeholder="direccion">
         <input class="form-input" type="text" name="city" placeholder="ciudad">
         <input class="form-input" type="text" name="country" placeholder="pais">
-        <select class="form-input" name="falbum">
+        <select class="form-input" name="falbum" id="select">
             <option value="" disabled selected>álbum favorito</option>
             <option value="Adrenaline">Adrenaline</option>
             <option value="Around the Fur">Around the Fur</option>
@@ -45,5 +47,12 @@
         <p>* campos obligatorios.</p>
         <input class="form-input" type="submit" value="enviar">
     </form>
+
+    <script>
+    new SlimSelect({
+    select: '#select'
+    })
+    </script>
+
 </body>
 </html>
