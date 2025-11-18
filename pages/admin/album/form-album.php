@@ -63,13 +63,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body class="page">
-    <header>
-        <nav class="nav-bar">
-            <ul>
-                <li><a href="admin-album.php">Volver</a></li>
-            </ul>
-        </nav>
-    </header>
+    <header></header>
 
     <form class="form" method="POST" action="form-album.php<?php echo $id ? '?id=' . $id : ''; ?>" enctype="multipart/form-data">
         <?php if ($mensaje){
@@ -77,12 +71,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         }; ?>
         
         <h2 class="form-title"><?php echo $titulo_pagina; ?></h2>
+        <div class="button-center">
+            <a href="admin-album.php" class="table-button admin-table-button">Volver</a>
+        </div>
         <input class="form-input" type="text" name="tituloAlbum" placeholder="Título" value="<?php echo $registro['tituloAlbum'] ?? ''; ?>" required>
         <input class="form-input" type="date" name="fecha" placeholder="Fecha" value="<?php echo $registro['fecha'] ?? ''; ?>" required>
         <input class="form-input" type="number" name="stream" placeholder="Stream" value="<?php echo $registro['stream'] ?? ''; ?>">
-        <input class="form-input" type="file" name="portada" required>
-        
-        <input class="form-input" type="submit" value="<?php echo $id ? 'Guardar' : 'Agregar'; ?>">
+        <input class="form-input" type="file" name="portada" required>     
+        <input class="form-input form-input-button" type="submit" value="<?php echo $id ? 'Guardar' : 'Agregar'; ?>">
     </form>
 </body>
 </html>

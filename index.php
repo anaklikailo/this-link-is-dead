@@ -25,6 +25,7 @@ conectar();
         <img src="/this-link-is-dead/images/portada.jpg" class="front-page">
         <h1>This link is dead</h1>
     </div>
+    
 
     <div class="table-list-container">
         <h2>Stream de los álbumes en Spotify.</h2>

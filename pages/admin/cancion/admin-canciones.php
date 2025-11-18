@@ -34,17 +34,15 @@ if (!$album) {
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body class="page">
-    <header>
-        <nav class="nav-bar">
-            <ul>
-                <li><a href="../album/admin-album.php">Volver</a></li>
-                <li><a href="form-cancion.php?id_album=<?php echo $id_album; ?>">Agregar Canción</a></li>
-            </ul>
-        </nav>
-    </header>
+    <header></header>
     
     <div class="form">
         <h2 class="form-title">Canciones - <?php echo $album['tituloAlbum']; ?></h2>
+        <div class="button-center">
+            <a href="../album/admin-album.php" class="table-button admin-table-button">Volver</a>
+            <a href="form-cancion.php?id_album=<?php echo $id_album; ?>" class="table-button admin-table-button">Agregar Canción</a>
+        </div>
+
         <?php
         echo "<table class='admin-table'>";
         echo "<tr><th><p>ID</p></th><th><p>Título</p></th><th><p>Glosa</p></th><th><p>Modificar</p></th><th><p>Eliminar</p></th></tr>";

@@ -5,13 +5,13 @@ $enviado = '';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = mysqli_real_escape_string($con, $_POST['email']);
-    $fname = mysqli_real_escape_string($con, $_POST['fname'] ?? '');
-    $lname = mysqli_real_escape_string($con, $_POST['lname'] ?? '');
+    $fname = mysqli_real_escape_string($con, $_POST['fname'] ?? '-');
+    $lname = mysqli_real_escape_string($con, $_POST['lname'] ?? '-');
     $phone = mysqli_real_escape_string($con, $_POST['phone'] ?? '');
-    $address = mysqli_real_escape_string($con, $_POST['address'] ?? '');
-    $city = mysqli_real_escape_string($con, $_POST['city'] ?? '');
-    $country = mysqli_real_escape_string($con, $_POST['country'] ?? '');
-    $falbum = mysqli_real_escape_string($con, $_POST['falbum'] ?? '');
+    $address = mysqli_real_escape_string($con, $_POST['address'] ?? '-');
+    $city = mysqli_real_escape_string($con, $_POST['city'] ?? '-');
+    $country = mysqli_real_escape_string($con, $_POST['country'] ?? '-');
+    $falbum = mysqli_real_escape_string($con, $_POST['falbum'] ?? '-');
     $mensaje = mysqli_real_escape_string($con, $_POST['mensaje']);
 
     
@@ -29,9 +29,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <title>Contacto</title>
     <link rel="stylesheet" href="../css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
 <body>
-    
     <header>
         <nav class="nav-bar">
             <ul>
@@ -59,20 +60,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <input class="form-input" type="text" name="country" placeholder="pais">
         <select class="form-input" name="falbum">
             <option value="" disabled selected>álbum favorito</option>
-            <option value="Adrenaline">Adrenaline</option>
-            <option value="Around the Fur">Around the Fur</option>
-            <option value="White Pony">White Pony</option>
-            <option value="Deftones">Deftones</option>
-            <option value="Saturday Night Wrist">Saturday Night Wrist</option>
-            <option value="Diamond Eyes">Diamond Eyes</option>
-            <option value="Koi No Yokan">Koi No Yokan</option>
-            <option value="Gore">Gore</option>
-            <option value="Ohms">Ohms</option>
-            <option value="Private Music">Private Music</option>
+            <?php
+            $albumes = mysqli_query($con, "SELECT tituloAlbum FROM album");
+            while($album = mysqli_fetch_assoc($albumes)){
+                echo "<option value='" . $album['tituloAlbum'] . "'>" . $album['tituloAlbum'] . "</option>";
+            }?>
         </select>
         <textarea class="form-input" name="mensaje" placeholder="escribí tu mensaje aqui...*" required></textarea>
         <p>* campos obligatorios.</p>
-        <input class="form-input" type="submit" value="enviar">
+        <input class="form-input form-input-button" type="submit" value="enviar">
     </form>
 </body>
 </html>

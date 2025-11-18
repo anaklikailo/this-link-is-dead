@@ -4,6 +4,7 @@ CREATE DATABASE thislinkisdead;
 
 USE thislinkisdead;
 
+DROP TABLE IF EXISTS cancion;
 DROP TABLE IF EXISTS album;
 CREATE TABLE album (
     idAlbum INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
@@ -12,7 +13,6 @@ CREATE TABLE album (
     portada VARCHAR(255),
     stream BIGINT
 );
-DROP TABLE IF EXISTS cancion;
 CREATE TABLE cancion (
     idCancion INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
     tituloCancion VARCHAR(255),

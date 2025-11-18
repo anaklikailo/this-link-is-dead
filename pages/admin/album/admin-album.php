@@ -19,16 +19,14 @@ conectar();
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body class="page">
-    <header>
-        <nav class="nav-bar">
-            <ul>
-                <li><a href="form-album.php">Agregar Álbum</a></li>
-            </ul>
-        </nav>
-    </header>
+    <header></header>
     
     <div class="form">
         <h2 class="form-title">ALBUMES</h2>
+        <div class="button-center">
+            <a href="form-album.php" class="table-button admin-table-button">Agregar Álbum</a>
+            <a href="../mensajes.php" class="table-button admin-table-button">Acceder a mensajes de contacto</a>
+        </div>
         <?php
         echo "<table class='admin-table'>";
         echo "<tr><th><p>Titulo</p></th><th><p>Fecha</p></th><th><p>Portada</p></th><th><p>Stream</p></th><th><p>Lista de Canciones</p></th><th><p>Modificar</p></th><th><p>Eliminar</p></th></tr>";

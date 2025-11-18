@@ -67,25 +67,20 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body class="page">
-    <header>
-        <nav class="nav-bar">
-            <ul>
-                <li><a href="admin-canciones.php?id=<?php echo $id_album; ?>">Volver</a></li>
-            </ul>
-        </nav>
-    </header>
+    <header></header>
 
     <form class="form" method="POST">
         <?php if ($mensaje){
             echo "<p class='form-success'> " . $mensaje . "</p>";
         }; ?>
-        
         <h2 class="form-title"><?php echo $titulo_pagina; ?></h2>
         <p><?php echo $album['tituloAlbum']; ?></p>
+        <div class="button-center">
+            <a href="admin-canciones.php?id=<?php echo $id_album; ?>" class="table-button admin-table-button">Volver</a>
+        </div>
         <input class="form-input" type="text" name="tituloCancion" placeholder="Título de la canción" value="<?php echo $registro['tituloCancion'] ?? ''; ?>" required>
         <input class="form-input" type="text" name="glosa" placeholder="Glosa" value="<?php echo $registro['glosa'] ?? ''; ?>">
-        
-        <input class="form-input" type="submit" value="<?php echo $id ? 'Guardar' : 'Agregar'; ?>">
+        <input class="form-input form-input-button" type="submit" value="<?php echo $id ? 'Guardar' : 'Agregar'; ?>">
     </form>
 </body>
 </html>
