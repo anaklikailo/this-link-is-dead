@@ -38,6 +38,8 @@ h2 {
     padding:15px 0;
     text-align: center;
     text-transform: uppercase;
+    font-family: Geneva, Verdana, sans-serif;
+
 }
 
 
@@ -57,6 +59,7 @@ p{
     position: relative;
     height: 720px;
     overflow: hidden;
+    border-bottom: solid 3px rgb(18, 26, 43);
 }
 
 .background {
@@ -106,6 +109,14 @@ p{
     cursor: pointer;
 }
 
+.about {
+    width: 80%;
+    margin: 20px auto;
+    text-align: left;
+    font-family: Trebuchet MS, serif;
+    font-size: 20px;
+    line-height: 1.5;
+}
 
 @media (max-width: 769px) {
     .nav-bar {
@@ -186,12 +197,12 @@ p{
         padding: 4px 10px;
     }
 
-    .table-list-container p {
+    .table-list-container p, .about p {
         font-size: 13px;
         padding: 5px;
     }
 
-    .table-list-container h2, h3 {
+    .table-list-container h2, h3, .about h2 {
         font-size: 14px;
         padding: 5px;
     }

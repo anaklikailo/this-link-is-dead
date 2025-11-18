@@ -25,7 +25,14 @@ conectar();
         <img src="/this-link-is-dead/images/portada.jpg" class="front-page">
         <h1>This link is dead</h1>
     </div>
-    
+
+    <div class="about">
+        <h2>Acerca de.</h2>
+        <p>Bienvenid@! Este es un sitio web tributo dedicado a la banda de metal/rock alternativo Deftones, 
+            creada por una fanática del grupo para compartir informacion sobre su discografia, aportando detalles sobre sus álbumes
+            y canciones. Accedé a la misma a través de la seccion 'Discografía'. Hay un apartado de 'Contacto' para en el que podés 
+            enviar sugerencias o consultas relacionadas con la banda o el sitio web en sí. </p>
+    </div>
 
     <div class="table-list-container">
         <h2>Stream de los álbumes en Spotify.</h2>
