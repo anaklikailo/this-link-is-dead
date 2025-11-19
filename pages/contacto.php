@@ -54,7 +54,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <input class="form-input" type="email" name="email" placeholder="email*" required>    
         <input class="form-input" type="text" name="fname" placeholder="nombre">
         <input class="form-input" type="text" name="lname" placeholder="apellido">
-        <input class="form-input" type="text" name="phone" placeholder="telefono">
+        <input class="form-input" type="number" name="phone" placeholder="telefono">
         <input class="form-input" type="text" name="address" placeholder="direccion">
         <input class="form-input" type="text" name="city" placeholder="ciudad">
         <input class="form-input" type="text" name="country" placeholder="pais">

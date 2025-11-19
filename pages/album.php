@@ -44,6 +44,7 @@ conectar();
                     }
                     echo "</li>";
                 }
+                echo "</ol>";
             echo "</div>";
         echo "</div>";
     }
