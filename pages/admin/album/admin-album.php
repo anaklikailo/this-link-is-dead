@@ -31,7 +31,7 @@ conectar();
         echo "<table class='admin-table'>";
         echo "<tr><th><p>Titulo</p></th><th><p>Fecha</p></th><th><p>Portada</p></th><th><p>Stream</p></th><th><p>Lista de Canciones</p></th><th><p>Modificar</p></th><th><p>Eliminar</p></th></tr>";
         
-        $albumes = mysqli_query($con,"SELECT idAlbum,tituloAlbum,fecha,portada,stream FROM album");
+        $albumes = mysqli_query($con,"SELECT idAlbum,tituloAlbum,fecha,portada,stream FROM album ORDER BY idAlbum DESC");
 
         while($album = mysqli_fetch_assoc($albumes)){
             echo "<tr>";

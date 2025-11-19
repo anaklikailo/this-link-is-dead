@@ -23,7 +23,7 @@ conectar();
     <h2>Álbumes de estudio.</h2>
     <div class="album-box-container" id="albumBoxContainer">
         <?php
-        $albumes = mysqli_query($con, "SELECT idAlbum, portada FROM album");
+        $albumes = mysqli_query($con, "SELECT idAlbum, portada, fecha FROM album ORDER BY fecha DESC");
         while($album = mysqli_fetch_assoc($albumes)){
             echo "<a href='album.php?idx=" . $album['idAlbum'] . "'>";
             echo "<div class='album-box' style='background-image: url(../" . $album['portada'] . ");'>";
