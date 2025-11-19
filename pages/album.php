@@ -40,7 +40,7 @@ conectar();
                 while($cancion = mysqli_fetch_assoc($canciones)){
                     echo "<li>" . $cancion['tituloCancion'];
                     if ($cancion['glosa'] != NULL) {
-                        echo "<div class='song-info'>Nota:<br>" . $cancion['glosa'] . "</div>";
+                        echo "<div class='song-info'><div class='album-note'>Nota:</div>" . $cancion['glosa'] . "</div>";
                     }
                     echo "</li>";
                 }

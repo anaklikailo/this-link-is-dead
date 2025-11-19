@@ -36,7 +36,7 @@ conectar();
                 echo "<p><strong>Email:</strong> ".$mensaje['email']."</p>";
                 echo "<p><strong>Teléfono:</strong> ".$mensaje['telefono']."</p>";
                 echo "<p><strong>Dirección:</strong> ".$mensaje['direccion'].", ". $mensaje['ciudad'].", ".$mensaje['pais']."</p>";
-                echo "<p><strong>Fecha de Álbum Favorito:</strong> ".$mensaje['falbum']."</p>";
+                echo "<p><strong>Álbum Favorito:</strong> ".$mensaje['falbum']."</p>";
                 echo "<p><strong>Mensaje:</strong> ".$mensaje['mensaje']."</p>";
                 echo "<p><strong>Fecha de Envío:</strong> ".$mensaje['fechaAlta']."</p>";
             echo "</div>";

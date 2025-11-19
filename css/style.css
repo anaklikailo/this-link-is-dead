@@ -339,7 +339,6 @@ p{
   height: 100%;
 }
 
-
 .album-box{
     width: 310px;
     height: 310px;
@@ -384,71 +383,65 @@ p{
 /* album.html */
 
 .album-item {
-    display: flex;
+    display: grid;
+    grid-template-columns: 400px 1fr; 
+    gap: 40px;
     background-color: rgb(32, 62, 87);
-    padding: 35px;
-    margin: 10px auto;
-    width: auto;
-    max-width: 780px;
+    padding: 35px 0 35px 35px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 900px;
     border-radius: 25px;
-    box-sizing: content-box;
+    box-sizing: border-box;
 }
 
 .album-pic-info {
     text-align: center;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction:column;
-    box-sizing: border-box;
 }
 
 .album-pic-info img {
-    max-width: 450px;
-    max-height: 450px;
+    width: 100%;
+    height: auto;
     border-radius: 5px;
 }
 
 .album-songs {
-    margin: 0 60px;
-    padding: 0;
-    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
 }
 
 .album-songs h3 {
-    width: 100%;
+    margin-bottom: 15px;
+    letter-spacing: 5px;
+}
+
+.album-songs ol {
+    padding: 0 0 0 20px;
+    margin: 0;
 }
 
 .album-songs li {
-    padding: 8px 0; 
-    box-sizing: border-box;
+    padding: 10px 0;
+    position: relative;
 }
 
 .song-info {
     display: none;
     position: absolute;
-    left: -194.5%;
+    left: -113.5%; 
     top: -270%;
     background: rgb(18, 26, 43);
     color: gainsboro;
-    padding: 22px;
-    font-size: 17px;
-    width: 450px;
-    height: auto;
-    box-sizing: border-box;
-    overflow: auto;
-    max-height: 300px;
+    padding: 15px;
+    font-size: 15px;
+    width: 370px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
     z-index: 10;
-}
-
-.album-songs li {
-    position: relative;
 }
 
 li:hover .song-info {
     display: block;
 }
-
 
 li:hover {
     color: rgb(134, 147, 204);
@@ -459,84 +452,50 @@ li:hover {
     letter-spacing: 5px;
 }
 
- @media (max-width: 1000px) {
+.album-note {
+    padding: 0 0 3px 0;
+    margin: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    border-bottom:rgb(134, 147, 204) dotted 2px;
+}
+
+@media (max-width: 900px) {
+
     .album-item {
+        display: flex;
         flex-direction: column;
-        align-items: center;
+        width: 100%; 
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 30px;
+        box-sizing: border-box;
         text-align: center;
-        max-width: 65%;
     }
 
-    .album-songs, p {
-        margin: 0;
-        font-size:35px ;
-    }
-
-    .album-item h2, h3 {
-        font-size: 35px;
-        text-align: center;
-        align-self: center;
-        margin: 20px;
-        padding: 15px;
+    .album-pic-info {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
     }
 
     .album-pic-info img {
-        max-width: 650px;
-        max-height: 650px;
-    }
-    
-    .album-songs li:active .song-info {
-        display: block;
-    }
-
-    .song-info {
-        position: absolute;
-        left: 6%;
-        top: -400%;
-        width: 500px;
-    }
-}
-
-@media (max-width: 768px) {
-    .album-item {
-        max-width: 90%;
-        padding: 15px;
-        align-self: center;
-
-    }
-
-    .album-songs, p {
-        font-size: 20px;
-        flex-wrap: wrap;
-        padding: 0 5px;
-    }
-
-    h2, h3 {
-        font-size: 25px;
-        padding: 10px;
-        margin: 10px;
-    }
-
-    .album-pic-info img {
-        align-self: center;
-        max-width: 320px;
-        max-height: 320px;
-    }
-
-    .song-info {
-        position: absolute;
-        left: 0%;
-        top: -400%;
-        width: 320px;
+        width: 100%;
         height: auto;
-        font-size: 16px;
-        padding: 10px
-    }
-
-    .album-songs li:active .song-info {
         display: block;
     }
+
+    .song-info {
+        position: static;
+        width: auto;
+        box-shadow: none;
+        margin-top: 10px;
+    }
 }
+
+
 
 .admin-table {
     width: 100%;
@@ -664,7 +623,7 @@ input[type=number] {
 }
 
 .contact-message-box p {
-    margin: 8px 0;
+    margin: 3px 0;
     text-align: left;
 }
 
